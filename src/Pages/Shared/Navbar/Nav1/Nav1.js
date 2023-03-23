@@ -14,7 +14,7 @@ const Nav1 = () => {
     }
 
     return (
-        <div className='py-2  xl:px-20 grid grid-cols-4 bg-sky-100'>
+        <div className='py-2  xl:px-20 grid grid-cols-4 bg-sky-100 px-4'>
             <div className='flex justify-start 2xl:justify-center items-center'>
                 <Link to='/' className='hover:scale-105 hover:ease-in-out hover:duration-300 text-3xl xl:text-4xl'>
                     <img src={navLogo} className="w-[100px]" alt="" srcset="" /></Link>
