@@ -1,0 +1,37 @@
+[
+    {
+        "name": "John Dulton",
+        "img": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "location": "Torronto, Canada",
+        "details": "It is the best place to find your desired package. I am in love with their packages and their behaviour.",
+        "rating": "4.5"
+    },
+    {
+        "name": "Jahid Hasan",
+        "img": "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",
+        "location": "Chittagong, Bangladesh",
+        "details": "Best to get everything about travel agency. Keep it up.",
+        "rating": "5.0"
+    },
+    {
+        "name": "Umme Salma Mumu",
+        "img": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg",
+        "location": "Delhi, India",
+        "details": "I heard about this website 2 months ago. This website has changed my thoughts about travelling.",
+        "rating": "3.5"
+    },
+    {
+        "name": "Anakong Hajin",
+        "img": "https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2020/04/15880151533206.jpg",
+        "location": "Ulama, Kenya",
+        "details": "Good service, keep it up.",
+        "rating": "3.0"
+    },
+    {
+        "name": "Jennifer Lopez",
+        "img": "https://femina.wwmindia.com/thumb/content/2021/sep/women-thumb1632797644.jpg?width=1200&height=900",
+        "location": "LA, United States",
+        "details": "One of the great services I have ever got in my life. Long live.",
+        "rating": "4.0"
+    }
+]
