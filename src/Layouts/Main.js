@@ -10,8 +10,9 @@ const Main = () => {
         <div>
             <Nav1 />
             <Outlet />
-            <DownloadApp />
-            <Footer />
+            {location.pathname !== '/login' && location.pathname !== '/signup' && <DownloadApp />}
+            {location.pathname !== '/login' && location.pathname !== '/signup' && <Footer />}
+
         </div>
     );
 };
