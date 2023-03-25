@@ -55,7 +55,7 @@ const Signup = () => {
                 }
 
                 //save user information to the database
-                fetch('http://localhost:5000/userData', {
+                fetch('https://one-travel-agent-server.vercel.app/userData', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

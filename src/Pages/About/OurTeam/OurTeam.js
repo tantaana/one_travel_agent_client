@@ -7,7 +7,7 @@ const OurTeam = () => {
 
     useEffect(() => {
         // setLoader(true);
-        fetch('http://localhost:5000/teamData')
+        fetch('https://one-travel-agent-server.vercel.app/teamData')
             .then(res => res.json())
             .then(data => {
                 setTeamData(data);

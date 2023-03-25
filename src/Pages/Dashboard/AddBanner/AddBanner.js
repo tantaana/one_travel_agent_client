@@ -67,7 +67,7 @@ const AddBanner = () => {
 
 
                     //save banner's information to the database
-                    fetch(`http://localhost:5000/bannerData/641e9414ee0fb07cbda321e2`, {
+                    fetch(`https://one-travel-agent-server.vercel.app/bannerData/641e9414ee0fb07cbda321e2`, {
                         method: 'PUT',
                         headers: {
                             'Content-Type': 'application/json'

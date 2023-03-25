@@ -15,7 +15,7 @@ const HomeHero = () => {
 
     useEffect(() => {
         setLoader(true);
-        fetch('http://localhost:5000/bannerData')
+        fetch('https://one-travel-agent-server.vercel.app/bannerData')
             .then(res => res.json())
             .then(data => {
                 setBanner(data);

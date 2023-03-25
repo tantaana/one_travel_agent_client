@@ -22,7 +22,7 @@ const ClientSays = () => {
 
     useEffect(() => {
         setLoader(true);
-        fetch('http://localhost:5000/userReview')
+        fetch('https://one-travel-agent-server.vercel.app/userReview')
             .then(res => res.json())
             .then(data => {
                 setUserReviews(data);

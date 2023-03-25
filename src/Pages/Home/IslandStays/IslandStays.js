@@ -11,7 +11,7 @@ const IslandStays = () => {
     // const { data: island = [] } = useQuery({
     //     queryKey: ['island'],
     //     queryFn: async () => {
-    //         const res = await fetch('http://localhost:5000/islandData');
+    //         const res = await fetch('https://one-travel-agent-server.vercel.app/islandData');
     //         const data = await res.json();
     //         return data;
     //     }
@@ -19,7 +19,7 @@ const IslandStays = () => {
 
     useEffect(() => {
         setLoader(true);
-        fetch('http://localhost:5000/islandData')
+        fetch('https://one-travel-agent-server.vercel.app/islandData')
             .then(res => res.json())
             .then(data => {
                 setIslands(data);

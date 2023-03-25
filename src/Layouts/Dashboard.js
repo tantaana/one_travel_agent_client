@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { RiProfileFill } from 'react-icons/ri';
 import { NavLink, Outlet } from 'react-router-dom';
 import AllTitle from '../Hooks/AllTitle';
+import { AuthContext } from '../Context/AuthProvider/AuthProvider'
+import useAdmin from '../Hooks/useAdmin';
 
 const Dashboard = () => {
-    AllTitle('Dashboard')
+    AllTitle('Dashboard');
+
+    const { user } = useContext(AuthContext);
+    const [isAdmin] = useAdmin(user?.email);
+
     const activeLinks = ({ isActive }) => {
         return {
             backgroundColor: isActive ? '#7dd3fc' : 'transparent',
@@ -19,7 +25,7 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="drawer drawer-mobile border border-black">
+        <div className="drawer drawer-mobile">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
 
             <div className="drawer-content">
@@ -35,13 +41,22 @@ const Dashboard = () => {
 
                     <NavLink to='/dashboard' className="mt-10 py-2 text-xl text-white text-center font-bold bg-teal-500 hover:bg-teal-600 mb-10 flex justify-center items-center gap-2"><span>My Dashboard</span> <RiProfileFill className='text-3xl' /></NavLink>
 
-                    <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/orders' style={activeLinks} className="text-lg font-semibold hover:rounded-lg p-2">My Order</NavLink></li>
+                    {
+                        !isAdmin && <>
+                            <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/orders' style={activeLinks} className="text-lg font-semibold hover:rounded-lg p-2">My Orders</NavLink></li>
+                        </>
+                    }
 
                     {/* --------------------------- */}
-                    <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/all_packages' style={activeLinks} className="text-lg font-semibold hover:rounded-lg p-2">All Packages</NavLink></li>
-                    <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/all_users' style={activeLinks} className="text-lg font-semibold hover:rounded-lg p-2">All Users</NavLink></li>
-                    <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/add_banner' style={activeLinks} className="text-lg font-semibold p-2">Add a Banner</NavLink></li>
+                    {
+                        isAdmin && <>
 
+                            <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/all_packages' style={activeLinks} className="text-lg font-semibold hover:rounded-lg p-2">All Packages</NavLink></li>
+                            <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/all_users' style={activeLinks} className="text-lg font-semibold hover:rounded-lg p-2">All Users</NavLink></li>
+                            <li onClick={handleClick} className='hover:bg-sky-300 hover:rounded-lg'><NavLink to='/dashboard/add_banner' style={activeLinks} className="text-lg font-semibold p-2">Add a Banner</NavLink></li>
+
+                        </>
+                    }
 
 
 
