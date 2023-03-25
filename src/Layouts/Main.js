@@ -10,8 +10,20 @@ const Main = () => {
         <div>
             <Nav1 />
             <Outlet />
-            {location.pathname !== '/login' && location.pathname !== '/signup' && <DownloadApp />}
-            {location.pathname !== '/login' && location.pathname !== '/signup' && <Footer />}
+            {
+                location.pathname !== '/login'
+                && location.pathname !== '/signup'
+                && location.pathname !== '/dashboard'
+                && location.pathname !== '/dashboard/add_banner'
+                && <DownloadApp />
+            }
+            {
+                location.pathname !== '/login'
+                && location.pathname !== '/signup'
+                && location.pathname !== '/dashboard'
+                && location.pathname !== '/dashboard/add_banner'
+                && <Footer />
+            }
 
         </div>
     );

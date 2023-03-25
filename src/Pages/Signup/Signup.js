@@ -172,7 +172,7 @@ const Signup = () => {
 
                                 <div className='mt-6'>
                                     <h2 className='text-lg font-semibold text-center w-full'>Already have an account?</h2>
-                                    <h2 className='text-lg font-semibold text-center w-full'><NavLink to='/login' className='font-bold text-sky-700 border border-red-300'>Login</NavLink> <span>here</span></h2>
+                                    <h2 className='text-lg font-semibold text-center w-full'><NavLink to='/login' className='font-bold text-sky-700'>Login</NavLink> <span>here</span></h2>
 
                                 </div>
 

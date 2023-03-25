@@ -1,7 +1,8 @@
 [
     {
-        "name": "John Dulton",
-        "img": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "text1": "The Exotic",
+        "text2": "Lakshadweep",
+        "text3": "Islands",
         "location": "Torronto, Canada",
         "details": "It is the best place to find your desired package. I am in love with their packages and their behaviour.",
         "rating": "4.5"

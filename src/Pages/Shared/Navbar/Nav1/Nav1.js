@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import navLogo from '../../../../Assets/nav-logo.png'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import './Nav1.css'
+import { AuthContext } from '../../../../Context/AuthProvider/AuthProvider';
+import { FiAlignRight } from 'react-icons/fi';
 
 const Nav1 = () => {
+
+    const { user, logOut } = useContext(AuthContext)
 
     const activeLinks = ({ isActive }) => {
         return {
@@ -18,6 +22,20 @@ const Nav1 = () => {
             borderBottom: isActive ? '3px solid #3b82f6' : '',
 
         }
+    }
+
+    const handleClick = () => {
+        const elem = document.activeElement;
+        if (elem) {
+            elem?.blur();
+        }
+    };
+
+    const handleLogOut = () => {
+        logOut()
+            .then(result => { })
+            .catch(err => console.error(err))
+
     }
 
     return (
@@ -48,10 +66,34 @@ const Nav1 = () => {
                 </div>
             </div>
 
-            <div className='flex justify-end 2xl:justify-center items-center gap-4 2xl:gap-6'>
-                <NavLink to='/login' style={activeLinks2}><button className='btn btn-ghost rounded-xl hover:bg-blue-300 text-blue-400 hover:text-white fontzz text-base mb-1'>Login</button></NavLink>
-                <NavLink to='/signup' style={activeLinks2}><button className='btn btn-primary rounded-full text-base bg-blue-500 hover:bg-blue-600 border-none mb-1'>Sign Up</button></NavLink>
-            </div>
+            {
+                user?.uid ?
+                    <div className='hidden xl:flex justify-end items-center gap-4 p-2'>
+                        <div className='avatar online'>
+                            <div className='w-12 rounded-full'>
+                                {user?.photoURL ?
+                                    <img src={user.photoURL} alt="" /> :
+                                    <img src="https://www.pinkvilla.com/english/images/2022/10/1942600650_hrithik-roshan-fighter-main-final_640*360.jpg" alt="" />}
+                            </div>
+                        </div>
+                        <h2 className='text-lg font-semibold'>{user?.displayName}</h2>
+                        <button onClick={handleLogOut} className='btn glass bg-red-500 hover:bg-red-600 text-black btn-outline rounded-full'>Sign Out</button>
+                        <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="hover:text-sky-700 "><FiAlignRight className='text-4xl' /></label>
+                            <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-sky-300 w-52 mt-5">
+                                <li><Link to='/' onClick={handleClick} className='text-lg font-semibold'>Home</Link></li>
+                                <li><Link to='/dashboard' onClick={handleClick} className='text-lg font-semibold'>Dashboard</Link></li>
+                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Contact</Link></li>
+                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                    :
+                    <div className='flex justify-end 2xl:justify-center items-center gap-4 2xl:gap-6'>
+                        <NavLink to='/login' style={activeLinks2}><button className='btn border-none bg-transparent hover:bg-sky-500 text-black hover:text-white mb-1'>Login</button></NavLink>
+                        <NavLink to='/signup' style={activeLinks2}><button className='btn glass bg-sky-500 hover:bg-sky-600 text-black btn-outline rounded-full mb-1'>Sign Up</button></NavLink>
+                    </div>
+            }
         </div>
     );
 };
