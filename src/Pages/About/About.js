@@ -1,8 +1,10 @@
 import React from 'react';
+import AllTitle from '../../Hooks/AllTitle';
 import './About.css'
 import OurTeam from './OurTeam/OurTeam';
 
 const About = () => {
+    AllTitle('About')
     return (
         <div>
             <div className='bgImg h-[300px] lg:h-[350px] flex justify-center items-center'>
