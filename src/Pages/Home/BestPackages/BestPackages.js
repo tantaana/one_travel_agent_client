@@ -26,7 +26,7 @@ const BestPackages = () => {
 
     useEffect(() => {
         setLoader(true);
-        fetch('http://localhost:5000/bestPackages')
+        fetch('https://one-travel-agent-server.vercel.app/bestPackages')
             .then(res => res.json())
             .then(data => {
                 setPackageData(data);

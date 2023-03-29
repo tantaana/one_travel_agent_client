@@ -12,7 +12,9 @@ import MyOrders from "../../Pages/Dashboard/MyOrders/MyOrders";
 import AllPackages from "../../Pages/Dashboard/AllPackages/AllPackages";
 import AllUsers from "../../Pages/Dashboard/AllUsers/AllUsers";
 import MyDashboard from "../../Pages/Dashboard/MyDashboard/MyDashboard";
-import PackageDetails from "../../Pages/Packages/PackageDetails/PackageDetails";
+import Maldives from "../../Pages/Packages/Maldives/Maldives";
+import Cordelia from "../../Pages/Packages/Cordelia/Cordelia";
+import Samudram from "../../Pages/Packages/Samudram/Samudram";
 
 export const router = createBrowserRouter([
     {
@@ -25,7 +27,15 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/packages/maldives',
-                element: <PackageDetails />
+                element: <Maldives />
+            },
+            {
+                path: '/packages/cordelia',
+                element: <Cordelia />
+            },
+            {
+                path: '/packages/samudram',
+                element: <Samudram />
             },
             {
                 path: '/about',

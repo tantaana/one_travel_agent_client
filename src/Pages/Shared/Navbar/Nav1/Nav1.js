@@ -40,7 +40,7 @@ const Nav1 = () => {
     }
 
     return (
-        <div className='py-2  xl:px-20 grid grid-cols-4 bg-sky-100 px-4'>
+        <div className='z-50 sticky top-0 py-2  xl:px-10 2xl:px-20 grid grid-cols-4 bg-sky-100 px-4'>
             <div className='flex justify-start 2xl:justify-center items-center'>
                 <Link to='/' className='hover:scale-105 ease-in-out duration-300 text-3xl xl:text-4xl'>
                     <img src={navLogo} className="w-[100px]" alt="" srcset="" /></Link>
@@ -65,34 +65,59 @@ const Nav1 = () => {
 
             </div>
 
+
             {
                 user?.uid ?
-                    <div className='hidden xl:flex justify-end items-center gap-4 p-2'>
-                        <div className='avatar online'>
-                            <div className='w-12 rounded-full'>
-                                {user?.photoURL ?
-                                    <img src={user.photoURL} alt="" /> :
-                                    <img src="https://www.pinkvilla.com/english/images/2022/10/1942600650_hrithik-roshan-fighter-main-final_640*360.jpg" alt="" />}
-                            </div>
-                        </div>
-                        <h2 className='text-lg font-semibold'>{user?.displayName}</h2>
+                    <div className='flex justify-end 2xl:justify-center items-center gap-4'>
                         <button onClick={handleLogOut} className='btn glass bg-red-500 hover:bg-red-600 text-black btn-outline rounded-full'>Sign Out</button>
                         <div className="dropdown dropdown-end">
                             <label tabIndex={0} className="hover:text-sky-700 "><FiAlignRight className='text-4xl' /></label>
                             <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-sky-300 w-52 mt-5">
+                                <div className='flex justify-center mb-2'>
+                                    <div className='avatar online'>
+                                        <div className='w-12 rounded-full'>
+                                            {user?.photoURL ?
+                                                <img src={user.photoURL} alt="" /> :
+                                                <img src="https://www.pinkvilla.com/english/images/2022/10/1942600650_hrithik-roshan-fighter-main-final_640*360.jpg" alt="" />}
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 className='text-lg font-semibold mb-6 text-center text-sky-800'>{user?.displayName}</h2>
                                 <li><Link to='/' onClick={handleClick} className='text-lg font-semibold'>Home</Link></li>
                                 <li><Link to='/dashboard' onClick={handleClick} className='text-lg font-semibold'>Dashboard</Link></li>
+                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Find Reservations</Link></li>
+                                <li><Link to='/packages/maldives' onClick={handleClick} className='text-lg font-semibold'>Packages</Link></li>
+                                <li className='pl-5'><Link to='/packages/maldives' onClick={handleClick} className='text-base font-semibold'>* Maldives</Link></li>
+                                <li className='pl-5'><Link to='/packages/cordelia' onClick={handleClick} className='text-base font-semibold'>* Cordelia</Link></li>
+                                <li className='pl-5'><Link to='/packages/samudram' onClick={handleClick} className='text-base font-semibold'>* Samudram</Link></li>
                                 <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Contact</Link></li>
                                 <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
                             </ul>
                         </div>
                     </div>
                     :
-                    <div className='flex justify-end 2xl:justify-center items-center gap-4 2xl:gap-6'>
-                        <NavLink to='/login' style={activeLinks2}><button className='btn border-none bg-transparent hover:bg-sky-500 text-black hover:text-white mb-1'>Login</button></NavLink>
-                        <NavLink to='/signup' style={activeLinks2}><button className='btn glass bg-sky-500 hover:bg-sky-600 text-black btn-outline rounded-full mb-1'>Sign Up</button></NavLink>
+                    <div className='flex justify-end 2xl:justify-center items-center gap-4'>
+                        <NavLink to='/login' style={activeLinks2}><button className='btn border-none bg-transparent hover:bg-sky-500 text-black hover:text-white'>Login</button></NavLink>
+                        <NavLink to='/signup' style={activeLinks2}><button className='btn glass bg-sky-500 hover:bg-sky-600 text-black btn-outline rounded-full'>Sign Up</button></NavLink>
+                        <div className="dropdown dropdown-end">
+                            <label tabIndex={0} className="hover:text-sky-700 "><FiAlignRight className='text-4xl' /></label>
+                            <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-sky-300 w-52 mt-5">
+                                <li><Link to='/' onClick={handleClick} className='text-lg font-semibold'>Home</Link></li>
+                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Find Reservations</Link></li>
+                                <li><Link to='/packages/maldives' onClick={handleClick} className='text-lg font-semibold'>Packages</Link></li>
+                                <li className='pl-5'><Link to='/packages/maldives' onClick={handleClick} className='text-base font-semibold'>* Maldives</Link></li>
+                                <li className='pl-5'><Link to='/packages/cordelia' onClick={handleClick} className='text-base font-semibold'>* Cordelia</Link></li>
+                                <li className='pl-5'><Link to='/packages/samudram' onClick={handleClick} className='text-base font-semibold'>* Samudram</Link></li>
+                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Contact</Link></li>
+                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
+                            </ul>
+                        </div>
                     </div>
+
             }
+
+
+
         </div>
     );
 };

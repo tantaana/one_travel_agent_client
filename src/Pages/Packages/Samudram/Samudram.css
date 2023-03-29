@@ -1,0 +1,25 @@
+.packageImg {
+    background-image: url('../../../Assets/boat.png');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 100%;
+    background-size: 15%;
+}
+
+@media only screen and (max-width: 800px) {
+    .packageImg {
+        background-size: 30%;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 801px) {
+    .packageImg {
+        background-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1001px) {
+    .packageImg {
+        background-size: 30%;
+    }
+}

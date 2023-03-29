@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './PackageDetails.css'
+import './Cordelia.css'
 import { SlMagnifier, SlCalender } from 'react-icons/sl';
 import { FaUmbrellaBeach } from 'react-icons/fa';
 import { BiBuildingHouse } from 'react-icons/bi';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import AllTitle from '../../../Hooks/AllTitle';
-import maldives from '../../../Assets/maldives.png'
+import cordelia from '../../../Assets/cordelia.webp'
 
-const PackageDetails = () => {
-    AllTitle('Packages')
+const Cordelia = () => {
+    AllTitle('Cordelia')
 
     //////------Increament and decreament by button-----///////
 
@@ -30,7 +30,7 @@ const PackageDetails = () => {
     return (
         <div>
             <div className='packageImg mx-4 mb-32 lg:mx-10 py-40'>
-                <h2 className='text-4xl md:text-5xl font-bold text-center my-10'>Maldives</h2>
+                <h2 className='text-4xl md:text-5xl font-bold text-center my-10'>Cordelia</h2>
                 <div className='flex items-center justify-center gap-1 relative left-[20px]'>
                     <input type="text" placeholder="Type a destination" className="input input-md input-bordered rounded-full w-full max-w-xs border border-gray-400" />
                     <div className='p-2 rounded-full bg-sky-700 hover:bg-sky-600 cursor-pointer relative right-[40px]'>
@@ -49,7 +49,7 @@ const PackageDetails = () => {
                         </div>
 
                         <div className='mb-10'>
-                            <img src={maldives} className="xl:w-11/12 2xl:w-5/6 object-cover" alt="" srcset="" />
+                            <img src={cordelia} className="xl:w-11/12 2xl:w-5/6 object-cover" alt="" srcset="" />
                         </div>
 
                         <h2 className='text-2xl lg:text-3xl font-semibold mb-10'>Package Overview</h2>
@@ -65,7 +65,7 @@ const PackageDetails = () => {
                                 <button className='btn bg-sky-700 hover:bg-sky-600 border-none text-white text-lg font-semibold flex justify-center px-10 rounded-md'><h2>Day 1</h2></button>
 
                                 <div className='pt-6'>
-                                    <h2 className='text-xl font-semibold mb-4 uppercase'>Arrival At Maldives</h2>
+                                    <h2 className='text-xl font-semibold mb-4 uppercase'>Arrival At Cordelia</h2>
 
                                     <div className='border border-gray-400 mb-4'></div>
 
@@ -77,7 +77,7 @@ const PackageDetails = () => {
                                 <button className='btn bg-sky-700 hover:bg-sky-600 border-none text-white text-lg font-semibold flex justify-center px-10 rounded-md'><h2>Day 2</h2></button>
 
                                 <div className='pt-6'>
-                                    <h2 className='text-xl font-semibold mb-4 uppercase'>Maldives</h2>
+                                    <h2 className='text-xl font-semibold mb-4 uppercase'>Cordelia</h2>
 
                                     <div className='border border-gray-400 mb-4'></div>
 
@@ -89,7 +89,7 @@ const PackageDetails = () => {
                                 <button className='btn bg-sky-700 hover:bg-sky-600 border-none text-white text-lg font-semibold flex justify-center px-10 rounded-md'><h2>Day 3</h2></button>
 
                                 <div className='pt-6'>
-                                    <h2 className='text-xl font-semibold mb-4 uppercase'>Departure from Maldives</h2>
+                                    <h2 className='text-xl font-semibold mb-4 uppercase'>Departure from Cordelia</h2>
 
                                     <div className='border border-gray-400 mb-4'></div>
 
@@ -132,7 +132,7 @@ const PackageDetails = () => {
 
                     <div className='px-20 md:px-44 lg:px-80 xl:px-0 py-2'>
                         <div className='mb-10'>
-                            <h2 className='text-center text-xl font-semibold mb-10'>Starting From <span className='text-2xl font-bold text-sky-700'>$50,999</span></h2>
+                            <h2 className='text-center text-xl font-semibold mb-10'>Starting From <span className='text-2xl font-bold text-sky-700'>$40,699</span></h2>
 
                             <h2 className='text-xl font-semibold text-center mb-2'>Want to Go For A Memorable Holiday?</h2>
                             <h2 className='text-sm text-gray-600 text-center'>Provide Your Details to Know Best Holiday Deals</h2>
@@ -143,7 +143,7 @@ const PackageDetails = () => {
                                 <h2 className='text-lg'>Package Name</h2>
                                 <FaUmbrellaBeach className='text-lg' />
                             </div>
-                            <input type="text" placeholder="Type here" value="Explore Maldives" className="input input-bordered border border-gray-500 w-full" />
+                            <input type="text" placeholder="Type here" value="Explore Cordelia" className="input input-bordered border border-gray-500 w-full" />
                         </div>
 
                         <div className='mb-6'>
@@ -151,7 +151,7 @@ const PackageDetails = () => {
                                 <h2 className='text-lg'>City of Departure</h2>
                                 <BiBuildingHouse className='text-lg' />
                             </div>
-                            <input type="text" placeholder="Type here" value="Bangalore" className="input input-bordered border border-gray-500 w-full" />
+                            <input type="text" placeholder="Type here" value="Ahmedabad" className="input input-bordered border border-gray-500 w-full" />
                         </div>
 
                         <div className='mb-6'>
@@ -208,4 +208,4 @@ const PackageDetails = () => {
     );
 };
 
-export default PackageDetails;
+export default Cordelia;
