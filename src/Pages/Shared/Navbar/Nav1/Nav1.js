@@ -85,13 +85,13 @@ const Nav1 = () => {
                                 <h2 className='text-lg font-semibold mb-6 text-center text-sky-800'>{user?.displayName}</h2>
                                 <li><Link to='/' onClick={handleClick} className='text-lg font-semibold'>Home</Link></li>
                                 <li><Link to='/dashboard' onClick={handleClick} className='text-lg font-semibold'>Dashboard</Link></li>
-                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Find Reservations</Link></li>
-                                <li><Link to='/packages/maldives' onClick={handleClick} className='text-lg font-semibold'>Packages</Link></li>
-                                <li className='pl-5'><Link to='/packages/maldives' onClick={handleClick} className='text-base font-semibold'>* Maldives</Link></li>
-                                <li className='pl-5'><Link to='/packages/cordelia' onClick={handleClick} className='text-base font-semibold'>* Cordelia</Link></li>
-                                <li className='pl-5'><Link to='/packages/samudram' onClick={handleClick} className='text-base font-semibold'>* Samudram</Link></li>
+                                <li className='block lg:hidden'><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Find Reservations</Link></li>
+                                <li className='block lg:hidden'><Link to='/packages/maldives' onClick={handleClick} className='text-lg font-semibold'>Packages</Link></li>
+                                <li className='pl-5 block lg:hidden'><Link to='/packages/maldives' onClick={handleClick} className='text-base font-semibold'>* Maldives</Link></li>
+                                <li className='pl-5 block lg:hidden'><Link to='/packages/cordelia' onClick={handleClick} className='text-base font-semibold'>* Cordelia</Link></li>
+                                <li className='pl-5 block lg:hidden'><Link to='/packages/samudram' onClick={handleClick} className='text-base font-semibold'>* Samudram</Link></li>
                                 <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Contact</Link></li>
-                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
+                                <li><Link to='/about' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -103,13 +103,13 @@ const Nav1 = () => {
                             <label tabIndex={0} className="hover:text-sky-700 "><FiAlignRight className='text-4xl' /></label>
                             <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-sky-300 w-52 mt-5">
                                 <li><Link to='/' onClick={handleClick} className='text-lg font-semibold'>Home</Link></li>
-                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Find Reservations</Link></li>
-                                <li><Link to='/packages/maldives' onClick={handleClick} className='text-lg font-semibold'>Packages</Link></li>
-                                <li className='pl-5'><Link to='/packages/maldives' onClick={handleClick} className='text-base font-semibold'>* Maldives</Link></li>
-                                <li className='pl-5'><Link to='/packages/cordelia' onClick={handleClick} className='text-base font-semibold'>* Cordelia</Link></li>
-                                <li className='pl-5'><Link to='/packages/samudram' onClick={handleClick} className='text-base font-semibold'>* Samudram</Link></li>
+                                <li className='block lg:hidden'><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Find Reservations</Link></li>
+                                <li className='block lg:hidden'><Link to='/packages/maldives' onClick={handleClick} className='text-lg font-semibold'>Packages</Link></li>
+                                <li className='pl-5 block lg:hidden'><Link to='/packages/maldives' onClick={handleClick} className='text-base font-semibold'>* Maldives</Link></li>
+                                <li className='pl-5 block lg:hidden'><Link to='/packages/cordelia' onClick={handleClick} className='text-base font-semibold'>* Cordelia</Link></li>
+                                <li className='pl-5 block lg:hidden'><Link to='/packages/samudram' onClick={handleClick} className='text-base font-semibold'>* Samudram</Link></li>
                                 <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>Contact</Link></li>
-                                <li><Link to='#' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
+                                <li><Link to='/about' onClick={handleClick} className='text-lg font-semibold'>About Us</Link></li>
                             </ul>
                         </div>
                     </div>
