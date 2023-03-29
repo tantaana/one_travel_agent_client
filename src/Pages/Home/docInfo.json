@@ -1,38 +1,101 @@
 [
     {
-        "text1": "The Exotic",
-        "text2": "Lakshadweep",
-        "text3": "Islands",
-        "location": "Torronto, Canada",
-        "details": "It is the best place to find your desired package. I am in love with their packages and their behaviour.",
-        "rating": "4.5"
+        "place": "Maldives",
+        "info": [
+            {
+                "package": "Kayaking",
+                "details": "Explore the Beauty of the island for 3 days and 2 nights with our travel agency. We are giving the best service to you and we will always be careful to give you our best services.",
+                "price": "500",
+                "rating": "4.5",
+                "img": "https://i.ibb.co/4JxtRtR/photo.png"
+            },
+            {
+                "package": "Ship Yard",
+                "details": "The best place to visit and to pass your good time with your family and friends. We are here to give you the best packages on the town.",
+                "price": "450",
+                "rating": "4.0",
+                "img": "https://i.ibb.co/bBC0CFm/photo-1.png"
+            },
+            {
+                "package": "Yacht Yard",
+                "details": "The best view to get for the visitors here and everyday a lot of people come this place just to take a look on the natural views. Come and visit here.",
+                "price": "300",
+                "rating": "5.0",
+                "img": "https://i.ibb.co/Mp9Yxhf/photo-2.png"
+            },
+            {
+                "package": "Baros Island",
+                "details": "Baros Island is the best place for visiting and see those rocks which are laid down on the islands. Come and have a look with your family.",
+                "price": "350",
+                "rating": "4.6",
+                "img": "https://i.ibb.co/sPHK208/Baros-Island.jpg"
+            }
+        ]
     },
     {
-        "name": "Jahid Hasan",
-        "img": "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",
-        "location": "Chittagong, Bangladesh",
-        "details": "Best to get everything about travel agency. Keep it up.",
-        "rating": "5.0"
+        "place": "Samudram",
+        "info": [
+            {
+                "package": "Lakshadweep",
+                "details": "Explore the Beauty of the island for 3 days and 2 nights with our travel agency. We are giving the best service to you and we will always be careful to give you our best services.",
+                "price": "500",
+                "rating": "4.5",
+                "img": "https://i.ibb.co/sqQNX80/lakshadweep-500x500.webp"
+            },
+            {
+                "package": "Antoniosi",
+                "details": "The best place to visit and to pass your good time with your family and friends. We are here to give you the best packages on the town.",
+                "price": "450",
+                "rating": "4.0",
+                "img": "https://i.ibb.co/hfbbKjz/lakshadweep-samudram-package-500x500.webp"
+            },
+            {
+                "package": "Kerala",
+                "details": "The best view to get for the visitors here and everyday a lot of people come this place just to take a look on the natural views. Come and visit here.",
+                "price": "300",
+                "rating": "5.0",
+                "img": "https://i.ibb.co/wCrNmXb/lakshadweep-tourism.jpg"
+            },
+            {
+                "package": "Agatti",
+                "details": "Agatti is the best place for visiting and see those rocks which are laid down on the islands. Come and have a look with your family.",
+                "price": "350",
+                "rating": "4.6",
+                "img": "https://i.ibb.co/prnQ5DB/agatti-island.jpg"
+            }
+        ]
     },
     {
-        "name": "Umme Salma Mumu",
-        "img": "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg",
-        "location": "Delhi, India",
-        "details": "I heard about this website 2 months ago. This website has changed my thoughts about travelling.",
-        "rating": "3.5"
-    },
-    {
-        "name": "Anakong Hajin",
-        "img": "https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2020/04/15880151533206.jpg",
-        "location": "Ulama, Kenya",
-        "details": "Good service, keep it up.",
-        "rating": "3.0"
-    },
-    {
-        "name": "Jennifer Lopez",
-        "img": "https://femina.wwmindia.com/thumb/content/2021/sep/women-thumb1632797644.jpg?width=1200&height=900",
-        "location": "LA, United States",
-        "details": "One of the great services I have ever got in my life. Long live.",
-        "rating": "4.0"
+        "place": "Cordelia",
+        "info": [
+            {
+                "package": "Indonesia",
+                "details": "Explore the Beauty of the island for 3 days and 2 nights with our travel agency. We are giving the best service to you and we will always be careful to give you our best services.",
+                "price": "500",
+                "rating": "4.5",
+                "img": "https://i.ibb.co/KhGS17D/A7-EC2619-CCCA-4-A50-A2-E9-4459904-DC0-C9.webp"
+            },
+            {
+                "package": "Bali",
+                "details": "The best place to visit and to pass your good time with your family and friends. We are here to give you the best packages on the town.",
+                "price": "450",
+                "rating": "4.0",
+                "img": "https://i.ibb.co/qjvV7SG/Getty-Images-494386476.webp"
+            },
+            {
+                "package": "Java",
+                "details": "The best view to get for the visitors here and everyday a lot of people come this place just to take a look on the natural views. Come and visit here.",
+                "price": "300",
+                "rating": "5.0",
+                "img": "https://i.ibb.co/CbLpxPr/cover-java.webp"
+            },
+            {
+                "package": "Bromo Volcano",
+                "details": "Bromo Volcano is the best place for visiting and see those rocks which are laid down on the islands. Come and have a look with your family.",
+                "price": "350",
+                "rating": "4.6",
+                "img": "https://i.ibb.co/c2CWmL5/bromo-volcano-sunrise-java-island-indonesia-171555215.jpg"
+            }
+        ]
     }
 ]

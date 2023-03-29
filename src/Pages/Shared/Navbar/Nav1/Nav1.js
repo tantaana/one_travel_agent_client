@@ -5,6 +5,7 @@ import { IoMdArrowDropdown } from 'react-icons/io'
 import './Nav1.css'
 import { AuthContext } from '../../../../Context/AuthProvider/AuthProvider';
 import { FiAlignRight } from 'react-icons/fi';
+import Packages from '../../../Packages/Packages';
 
 const Nav1 = () => {
 
@@ -13,7 +14,7 @@ const Nav1 = () => {
     const activeLinks = ({ isActive }) => {
         return {
             color: isActive ? '#3b82f6' : '',
-            borderBottom: isActive ? '3px solid #3b82f6' : '',
+            borderBottom: isActive ? '3px solid #3b82f6' : ''
         }
     }
 
@@ -47,23 +48,21 @@ const Nav1 = () => {
 
             <div className='col-span-2 flex justify-end lg:justify-center items-center'>
                 <div className="hidden lg:flex justify-center items-center gap-4 xl:gap-6 2xl:gap-8">
-                    <NavLink to='/reservations' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center'>Find Reservations</h2></NavLink>
+                    <NavLink to='/reservations' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 ease-in-out duration-300 text-center'>Find Reservations</h2></NavLink>
 
 
-                    <NavLink to='/packages' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center flex items-center gap-1'>Packages <IoMdArrowDropdown /></h2></NavLink>
+                    <Packages />
+                    {/* <NavLink to='/packages' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center flex items-center gap-1'>Packages <IoMdArrowDropdown /></h2></NavLink> */}
 
-                    <NavLink to='/about_lakshadweep' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center flex items-center gap-1'>About Lakshadweep <IoMdArrowDropdown /></h2></NavLink>
+                    <NavLink to='/about_lakshadweep' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 ease-in-out duration-300 text-center flex items-center gap-1'>About Lakshadweep <IoMdArrowDropdown /></h2></NavLink>
 
-                    <NavLink to='/about' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center'>About Us</h2></NavLink>
+                    <NavLink to='/about' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 ease-in-out duration-300 text-center'>About Us</h2></NavLink>
 
-                    <NavLink to='/gol' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center'>GOL</h2></NavLink>
+                    <NavLink to='/gol' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 ease-in-out duration-300 text-center'>GOL</h2></NavLink>
 
-                    <NavLink to='/support' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 hover:ease-in-out hover:duration-300 text-center'>Support</h2></NavLink>
+                    <NavLink to='/support' style={activeLinks}><h2 className='text-sm xl:text-base font-semibold hover:text-blue-500 ease-in-out duration-300 text-center'>Support</h2></NavLink>
                 </div>
 
-                <div className='lg:hidden'>
-
-                </div>
             </div>
 
             {

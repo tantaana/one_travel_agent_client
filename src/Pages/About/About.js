@@ -1,6 +1,7 @@
 import React from 'react';
 import AllTitle from '../../Hooks/AllTitle';
 import './About.css'
+import Certificate from './Certificate/Certificate';
 import OurTeam from './OurTeam/OurTeam';
 
 const About = () => {
@@ -13,11 +14,13 @@ const About = () => {
 
             <div className='mt-28'>
                 <h2 className='text-4xl font-semibold text-center mb-2'>Our Team</h2>
-                <h2 className='text-xl text-center'>Meet our team who contributed the most in our journey</h2>
+                <h2 className='mx-2 text-lg md:text-xl text-center'>Meet our team who contributed the most in our journey</h2>
 
             </div>
 
             <OurTeam />
+
+            <Certificate />
         </div>
     );
 };
