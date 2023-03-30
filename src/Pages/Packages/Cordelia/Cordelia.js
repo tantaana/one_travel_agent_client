@@ -159,7 +159,7 @@ const Cordelia = () => {
                                 <h2 className='text-lg'>Date of Departure</h2>
                                 <SlCalender className='text-lg' />
                             </div>
-                            <input type="number" placeholder="Date of Departure" value="" className="input input-bordered border border-gray-500 w-full" />
+                            <input type="number" placeholder="Date of Departure" className="input input-bordered border border-gray-500 w-full" />
                         </div>
 
                         <div className='flex items-center justify-between mb-6'>
@@ -187,9 +187,9 @@ const Cordelia = () => {
                                 <h2 className='text-lg'>Contact Details</h2>
                                 <div className='border border-gray-500 w-1/2'></div>
                             </div>
-                            <input type="text" placeholder="Your Name" value="" className="input input-bordered border border-gray-500 w-full mb-3" />
-                            <input type="email" placeholder="Your Email Address" value="" className="input input-bordered border border-gray-500 w-full mb-3" />
-                            <input type="number" placeholder="Your Mobile Number" value="" className="input input-bordered border border-gray-500 w-full" />
+                            <input type="text" placeholder="Your Name" className="input input-bordered border border-gray-500 w-full mb-3" />
+                            <input type="email" placeholder="Your Email Address" className="input input-bordered border border-gray-500 w-full mb-3" />
+                            <input type="number" placeholder="Your Mobile Number" className="input input-bordered border border-gray-500 w-full" />
                         </div>
 
                         <button className='btn bg-white hover:bg-sky-700 text-sky-700 hover:text-white border border-sky-700 hover:border-none w-full text-lg mb-6'>Send Query</button>
