@@ -69,7 +69,7 @@ const Signup = () => {
                             toast.success('Successfully signed up');
                             setIsLoading(false);
                             setTimeout(() => {
-                                navigate(from, { replace: true });
+                                navigate('/');
                             }, 2000);
                         }
                     })

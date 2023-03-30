@@ -38,7 +38,7 @@ const Login = () => {
                 if (user) {
                     setIsLoading(false);
                     toast.success('Successfully Logged In')
-                    navigate(from, { replace: true })
+                    navigate('/')
 
                 }
                 form.reset();
